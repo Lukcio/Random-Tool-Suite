@@ -62,15 +62,15 @@
 		143FE65320EFA5270097A6E9 /* Random App Suite */ = {
 			isa = PBXGroup;
 			children = (
-				143FE65420EFA5270097A6E9 /* AppDelegate.swift */,
-				143FE65620EFA5270097A6E9 /* ViewController.swift */,
 				143FE65820EFA5270097A6E9 /* Main.storyboard */,
-				143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */,
-				143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */,
+				143FE65620EFA5270097A6E9 /* ViewController.swift */,
 				143FE66620EFCA4C0097A6E9 /* CoinViewController.swift */,
+				143FE66820EFD6730097A6E9 /* DiceViewController.swift */,
+				143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */,
+				143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */,
 				143FE65B20EFA5280097A6E9 /* Assets.xcassets */,
 				143FE65D20EFA5280097A6E9 /* LaunchScreen.storyboard */,
-				143FE66820EFD6730097A6E9 /* DiceViewController.swift */,
+				143FE65420EFA5270097A6E9 /* AppDelegate.swift */,
 				143FE66020EFA5280097A6E9 /* Info.plist */,
 			);
 			path = "Random App Suite";

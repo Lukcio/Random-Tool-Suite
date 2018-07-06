@@ -214,7 +214,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB3-5r-Tga">
-                                <rect key="frame" x="157" y="513" width="61" height="38"/>
+                                <rect key="frame" x="157" y="554" width="61" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="7qA-qc-AVQ"/>
+                                    <constraint firstAttribute="width" constant="61" id="AdS-cv-ZwX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Return">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,18 +227,57 @@
                                     <segue destination="LJg-wK-Kq1" kind="unwind" unwindAction="unwindToInitialViewControllerWithSegue:" id="e1S-tC-wTj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXJ-gT-bfp">
+                                <rect key="frame" x="132" y="44" width="111" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="JTB-9U-LyR"/>
+                                    <constraint firstAttribute="width" constant="111" id="v00-Ti-IUa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Dice Roller">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice3d_1" translatesAutoresizingMaskIntoConstraints="NO" id="cT1-PR-HGI">
+                                <rect key="frame" x="67" y="93" width="240" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="fJ5-nT-Sbh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBX-E7-Xb2">
+                                <rect key="frame" x="170" y="393" width="34" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRollButtonTapped:" destination="RQv-5X-yfA" eventType="touchUpInside" id="7vQ-Md-2wd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hbg-N8-xTw" firstAttribute="centerX" secondItem="CB3-5r-Tga" secondAttribute="centerX" id="1RZ-bB-jMg"/>
                             <constraint firstItem="hbg-N8-xTw" firstAttribute="leading" secondItem="Yda-qO-Ofh" secondAttribute="leading" id="3cR-0u-TAs"/>
-                            <constraint firstItem="CB3-5r-Tga" firstAttribute="top" secondItem="ciO-jr-hNx" secondAttribute="top" constant="493" id="Lz8-Xq-NGW"/>
+                            <constraint firstItem="cT1-PR-HGI" firstAttribute="centerX" secondItem="CB3-5r-Tga" secondAttribute="centerX" id="74T-Hy-y17"/>
+                            <constraint firstItem="CXJ-gT-bfp" firstAttribute="centerX" secondItem="CB3-5r-Tga" secondAttribute="centerX" id="FRY-WE-ypW"/>
+                            <constraint firstItem="cBX-E7-Xb2" firstAttribute="centerX" secondItem="CB3-5r-Tga" secondAttribute="centerX" id="Hn0-nS-g9N"/>
+                            <constraint firstItem="CB3-5r-Tga" firstAttribute="centerX" secondItem="Yda-qO-Ofh" secondAttribute="centerX" id="IWB-Id-9BD"/>
+                            <constraint firstItem="CB3-5r-Tga" firstAttribute="top" secondItem="ciO-jr-hNx" secondAttribute="top" constant="534" id="Lz8-Xq-NGW"/>
+                            <constraint firstItem="cT1-PR-HGI" firstAttribute="centerY" secondItem="hbg-N8-xTw" secondAttribute="centerY" constant="-94.5" id="Wkr-ri-Ohl"/>
+                            <constraint firstItem="cBX-E7-Xb2" firstAttribute="top" secondItem="cT1-PR-HGI" secondAttribute="bottom" constant="8" id="cGL-Ze-qP7"/>
+                            <constraint firstItem="CXJ-gT-bfp" firstAttribute="top" secondItem="ciO-jr-hNx" secondAttribute="top" constant="24" id="d3E-f1-rBP"/>
+                            <constraint firstItem="CXJ-gT-bfp" firstAttribute="centerX" secondItem="Yda-qO-Ofh" secondAttribute="centerX" id="ejE-y2-Wdn"/>
                             <constraint firstItem="hbg-N8-xTw" firstAttribute="top" secondItem="Yda-qO-Ofh" secondAttribute="top" id="q0P-gd-pXR"/>
                             <constraint firstItem="hbg-N8-xTw" firstAttribute="bottom" secondItem="ciO-jr-hNx" secondAttribute="bottom" id="ryL-jO-171"/>
                             <constraint firstAttribute="trailing" secondItem="hbg-N8-xTw" secondAttribute="trailing" id="xPt-bU-34Q"/>
+                            <constraint firstItem="cT1-PR-HGI" firstAttribute="leading" secondItem="ciO-jr-hNx" secondAttribute="leading" constant="67" id="y9y-Ot-HaZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ciO-jr-hNx"/>
                     </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="cT1-PR-HGI" id="cSY-G8-BxS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9m-fH-zRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="LJg-wK-Kq1" userLabel="Exit" sceneMemberID="exit"/>
@@ -331,5 +374,6 @@
     <resources>
         <image name="bg" width="1242" height="2208"/>
         <image name="blank" width="301" height="301"/>
+        <image name="dice3d_1" width="751" height="720"/>
     </resources>
 </document>

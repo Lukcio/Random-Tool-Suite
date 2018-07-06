@@ -12,6 +12,10 @@
 		143FE65A20EFA5270097A6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143FE65820EFA5270097A6E9 /* Main.storyboard */; };
 		143FE65C20EFA5280097A6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143FE65B20EFA5280097A6E9 /* Assets.xcassets */; };
 		143FE65F20EFA5280097A6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143FE65D20EFA5280097A6E9 /* LaunchScreen.storyboard */; };
+		143FE66720EFCA4C0097A6E9 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66620EFCA4C0097A6E9 /* CoinViewController.swift */; };
+		143FE66920EFD6730097A6E9 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66820EFD6730097A6E9 /* DiceViewController.swift */; };
+		143FE66B20EFD6C80097A6E9 /* RandomNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */; };
+		143FE66D20EFD6EF0097A6E9 /* RandomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		143FE65B20EFA5280097A6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		143FE65E20EFA5280097A6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		143FE66020EFA5280097A6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143FE66620EFCA4C0097A6E9 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		143FE66820EFD6730097A6E9 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewController.swift; sourceTree = "<group>"; };
+		143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +65,12 @@
 				143FE65420EFA5270097A6E9 /* AppDelegate.swift */,
 				143FE65620EFA5270097A6E9 /* ViewController.swift */,
 				143FE65820EFA5270097A6E9 /* Main.storyboard */,
+				143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */,
+				143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */,
+				143FE66620EFCA4C0097A6E9 /* CoinViewController.swift */,
 				143FE65B20EFA5280097A6E9 /* Assets.xcassets */,
 				143FE65D20EFA5280097A6E9 /* LaunchScreen.storyboard */,
+				143FE66820EFD6730097A6E9 /* DiceViewController.swift */,
 				143FE66020EFA5280097A6E9 /* Info.plist */,
 			);
 			path = "Random App Suite";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143FE66D20EFD6EF0097A6E9 /* RandomNameViewController.swift in Sources */,
+				143FE66B20EFD6C80097A6E9 /* RandomNumberViewController.swift in Sources */,
+				143FE66720EFCA4C0097A6E9 /* CoinViewController.swift in Sources */,
 				143FE65720EFA5270097A6E9 /* ViewController.swift in Sources */,
 				143FE65520EFA5270097A6E9 /* AppDelegate.swift in Sources */,
+				143FE66920EFD6730097A6E9 /* DiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

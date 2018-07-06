@@ -9,6 +9,10 @@
 import UIKit
 
 class CoinViewController: UIViewController {
+    
+    @IBOutlet weak var coinImageOutlet: UIButton!
+
+    var sides = ["heads", "tails"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +28,28 @@ class CoinViewController: UIViewController {
     @IBAction func unwindToInitialViewController(segue: UIStoryboardSegue) {
     }
     
-    @IBAction func flipButton(_ sender: UIButton) {
-        print("this")
+    func flipCoin() {
+        let randomNumber = Int(arc4random_uniform(2))
+        let selectedSide = sides[randomNumber]
+        print(selectedSide)
+        if selectedSide == "heads" {
+            coinImageOutlet.setImage(UIImage(named: "heads.png"), for: UIControlState.normal)
+        } else {
+            coinImageOutlet.setImage(UIImage(named: "tails.png"), for: UIControlState.normal)
+        }
     }
+    
+    func resetFlip() {
+        coinImageOutlet.setImage(UIImage(named: "blank.png"), for: UIControlState.normal)
+    }
+    
+    @IBAction func coinButton(_ sender: Any) {
+        flipCoin()
+    }
+    @IBAction func onResetButtonTapped(_ sender: Any) {
+        resetFlip()
+    }
+    
     
     /*
     // MARK: - Navigation

@@ -20,39 +20,27 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ehl-Dg-cTe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="HNA-6u-kfJ"/>
+                                    <constraint firstAttribute="width" constant="375" id="foH-jb-XdR"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yR-qB-FO4">
-                                <rect key="frame" x="69" y="530" width="239" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Random Number Generator">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oRT-kD-U2h" kind="show" id="a14-Og-n5Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-3I-yBE">
-                                <rect key="frame" x="78" y="415" width="220" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Random Name Generator">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZO7-Vt-mU2" kind="show" id="KWg-y3-ZsX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-7N-AFz">
-                                <rect key="frame" x="141" y="293" width="94" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Dice Roller">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RQv-5X-yfA" kind="show" id="gX3-5Y-EE1"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Selection Tool Suite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-J6-53I">
+                                <rect key="frame" x="40" y="46" width="295" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="7IA-BZ-hhd"/>
+                                    <constraint firstAttribute="height" constant="29" id="g5s-NX-ks2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-lU-ZYd">
-                                <rect key="frame" x="135" y="167" width="105" height="36"/>
+                                <rect key="frame" x="135" y="137" width="105" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="p0g-rU-OiJ"/>
+                                    <constraint firstAttribute="height" constant="36" id="rXR-YS-1jg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Coin Flipper">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,29 +49,65 @@
                                     <segue destination="B37-3c-tdn" kind="show" id="Sg9-ki-3iG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Selection Tool Suite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-J6-53I">
-                                <rect key="frame" x="40" y="46" width="295" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-7N-AFz">
+                                <rect key="frame" x="140" y="197" width="94" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="O9J-J5-WY1"/>
+                                    <constraint firstAttribute="width" constant="94" id="PCz-X3-iai"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Dice Roller">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RQv-5X-yfA" kind="show" id="gX3-5Y-EE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-3I-yBE">
+                                <rect key="frame" x="77" y="315" width="220" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="2B1-op-Dmo"/>
+                                    <constraint firstAttribute="height" constant="36" id="q6T-ea-LHJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Random Name Generator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZO7-Vt-mU2" kind="show" id="KWg-y3-ZsX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yR-qB-FO4">
+                                <rect key="frame" x="68" y="442" width="239" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FSK-bk-5GZ"/>
+                                    <constraint firstAttribute="width" constant="239" id="cpU-6C-JrS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Random Number Generator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oRT-kD-U2h" kind="show" id="a14-Og-n5Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IAN-lU-ZYd" firstAttribute="centerX" secondItem="cBB-7N-AFz" secondAttribute="centerX" id="2yg-RF-sDF"/>
-                            <constraint firstItem="b3j-3I-yBE" firstAttribute="top" secondItem="cBB-7N-AFz" secondAttribute="bottom" constant="86" id="6nN-nm-rN5"/>
+                            <constraint firstItem="b3j-3I-yBE" firstAttribute="centerX" secondItem="3yR-qB-FO4" secondAttribute="centerX" id="CSd-ad-xHf"/>
                             <constraint firstItem="ehl-Dg-cTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CSw-0j-qXv"/>
-                            <constraint firstItem="cBB-7N-AFz" firstAttribute="top" secondItem="IAN-lU-ZYd" secondAttribute="bottom" constant="90" id="FNn-lI-ie6"/>
                             <constraint firstItem="ehl-Dg-cTe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jq2-k1-cFV"/>
-                            <constraint firstItem="IAN-lU-ZYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1B-Co-Usi"/>
-                            <constraint firstItem="Ep3-J6-53I" firstAttribute="centerX" secondItem="IAN-lU-ZYd" secondAttribute="centerX" id="LmX-le-hHY"/>
-                            <constraint firstItem="Ep3-J6-53I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="NF9-fk-SVX"/>
-                            <constraint firstItem="cBB-7N-AFz" firstAttribute="centerX" secondItem="b3j-3I-yBE" secondAttribute="centerX" id="gZK-7A-JE6"/>
-                            <constraint firstItem="IAN-lU-ZYd" firstAttribute="top" secondItem="ehl-Dg-cTe" secondAttribute="bottom" constant="-500" id="kJu-YZ-hUG"/>
-                            <constraint firstItem="3yR-qB-FO4" firstAttribute="top" secondItem="b3j-3I-yBE" secondAttribute="bottom" constant="79" id="l9d-pb-bao"/>
+                            <constraint firstItem="Ep3-J6-53I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="LcB-7m-vK5"/>
+                            <constraint firstItem="b3j-3I-yBE" firstAttribute="top" secondItem="cBB-7N-AFz" secondAttribute="bottom" constant="82" id="Q9a-cx-Xxc"/>
+                            <constraint firstItem="cBB-7N-AFz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R8I-jg-qKU"/>
+                            <constraint firstItem="IAN-lU-ZYd" firstAttribute="top" secondItem="Ep3-J6-53I" secondAttribute="bottom" constant="62" id="TuJ-0X-EIr"/>
+                            <constraint firstItem="Ep3-J6-53I" firstAttribute="centerX" secondItem="IAN-lU-ZYd" secondAttribute="centerX" id="WMR-Mh-U6h"/>
+                            <constraint firstItem="cBB-7N-AFz" firstAttribute="centerX" secondItem="b3j-3I-yBE" secondAttribute="centerX" id="eQu-oT-dfK"/>
+                            <constraint firstItem="3yR-qB-FO4" firstAttribute="top" secondItem="b3j-3I-yBE" secondAttribute="bottom" constant="91" id="iBq-fR-hV6"/>
                             <constraint firstItem="ehl-Dg-cTe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nDe-Jk-4Ph"/>
-                            <constraint firstItem="b3j-3I-yBE" firstAttribute="centerX" secondItem="3yR-qB-FO4" secondAttribute="centerX" id="oGb-Oz-WYp"/>
                             <constraint firstAttribute="trailing" secondItem="ehl-Dg-cTe" secondAttribute="trailing" id="omh-SX-xNz"/>
+                            <constraint firstItem="b3j-3I-yBE" firstAttribute="centerY" secondItem="ehl-Dg-cTe" secondAttribute="centerY" id="qzi-gX-Hxd"/>
+                            <constraint firstItem="IAN-lU-ZYd" firstAttribute="centerX" secondItem="cBB-7N-AFz" secondAttribute="centerX" id="wNX-4T-gM5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -109,18 +133,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP4-cg-B4B">
-                                <rect key="frame" x="171" y="173" width="33" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-Ho-fCZ">
+                                <rect key="frame" x="87" y="201" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="A18-vi-XmK"/>
+                                    <constraint firstAttribute="width" constant="200" id="Mer-KG-lEk"/>
+                                </constraints>
+                                <state key="normal" image="blank"/>
+                                <connections>
+                                    <action selector="coinButton:" destination="B37-3c-tdn" eventType="touchUpInside" id="KtQ-CY-DlY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the coin to flip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac3-x1-m8u">
+                                <rect key="frame" x="105" y="128" width="165" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Flip">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krd-Zg-9BD">
+                                <rect key="frame" x="168" y="419" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="Hhd-4I-zCc"/>
+                                    <constraint firstAttribute="height" constant="30" id="gCQ-S2-1Dd"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipButton:" destination="B37-3c-tdn" eventType="touchUpInside" id="pEp-LL-dme"/>
+                                    <action selector="onResetButtonTapped:" destination="B37-3c-tdn" eventType="touchUpInside" id="gP3-qI-xNB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU6-BT-dIK">
-                                <rect key="frame" x="157" y="451" width="61" height="38"/>
+                                <rect key="frame" x="157" y="544" width="61" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Return">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,26 +173,29 @@
                                     <segue destination="igH-7c-X10" kind="unwind" unwindAction="unwindToInitialViewControllerWithSegue:" id="pOw-MR-PSd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ez-cR-c5b">
-                                <rect key="frame" x="77" y="227" width="220" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1cJ-ut-ML8" firstAttribute="centerX" secondItem="jP4-cg-B4B" secondAttribute="centerX" id="5pj-Yf-Oh4"/>
-                            <constraint firstItem="jP4-cg-B4B" firstAttribute="top" secondItem="FIy-xL-Y2f" secondAttribute="bottom" constant="98" id="8Uq-zh-Bde"/>
+                            <constraint firstItem="krd-Zg-9BD" firstAttribute="centerX" secondItem="eU6-BT-dIK" secondAttribute="centerX" id="41G-c5-ahS"/>
+                            <constraint firstItem="eU6-BT-dIK" firstAttribute="centerX" secondItem="YQF-Ho-fCZ" secondAttribute="centerX" id="8cv-lO-UG8"/>
                             <constraint firstItem="FIy-xL-Y2f" firstAttribute="centerX" secondItem="Bhi-IX-ccu" secondAttribute="centerX" id="A2X-9a-E6b"/>
+                            <constraint firstItem="krd-Zg-9BD" firstAttribute="top" secondItem="YQF-Ho-fCZ" secondAttribute="bottom" constant="18" id="EZb-Wc-x9f"/>
+                            <constraint firstItem="eU6-BT-dIK" firstAttribute="centerX" secondItem="FIy-xL-Y2f" secondAttribute="centerX" id="HjV-UJ-htM"/>
                             <constraint firstItem="1cJ-ut-ML8" firstAttribute="bottom" secondItem="gMf-ER-Ec3" secondAttribute="bottom" id="L2m-NI-XzB"/>
+                            <constraint firstItem="krd-Zg-9BD" firstAttribute="centerX" secondItem="1cJ-ut-ML8" secondAttribute="centerX" id="OXR-0G-K5a"/>
                             <constraint firstItem="1cJ-ut-ML8" firstAttribute="leading" secondItem="Bhi-IX-ccu" secondAttribute="leading" id="ScA-6N-AuI"/>
-                            <constraint firstItem="FIy-xL-Y2f" firstAttribute="centerX" secondItem="jP4-cg-B4B" secondAttribute="centerX" id="WYY-R6-jkE"/>
+                            <constraint firstItem="eU6-BT-dIK" firstAttribute="centerX" secondItem="Ac3-x1-m8u" secondAttribute="centerX" id="V0t-RF-GMt"/>
                             <constraint firstItem="FIy-xL-Y2f" firstAttribute="top" secondItem="gMf-ER-Ec3" secondAttribute="top" constant="26" id="hdH-wA-fh3"/>
+                            <constraint firstItem="eU6-BT-dIK" firstAttribute="top" secondItem="YQF-Ho-fCZ" secondAttribute="bottom" constant="143" id="nkC-H7-ocp"/>
                             <constraint firstItem="1cJ-ut-ML8" firstAttribute="top" secondItem="Bhi-IX-ccu" secondAttribute="top" id="t8o-Ah-CWx"/>
-                            <constraint firstItem="eU6-BT-dIK" firstAttribute="centerX" secondItem="jP4-cg-B4B" secondAttribute="centerX" id="xlG-MT-FQ9"/>
-                            <constraint firstItem="gMf-ER-Ec3" firstAttribute="bottom" secondItem="eU6-BT-dIK" secondAttribute="bottom" constant="178" id="yHV-ce-4HD"/>
+                            <constraint firstItem="YQF-Ho-fCZ" firstAttribute="top" secondItem="Ac3-x1-m8u" secondAttribute="bottom" constant="47" id="xTV-34-HW7"/>
+                            <constraint firstItem="gMf-ER-Ec3" firstAttribute="bottom" secondItem="eU6-BT-dIK" secondAttribute="bottom" constant="85" id="yHV-ce-4HD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gMf-ER-Ec3"/>
                     </view>
+                    <connections>
+                        <outlet property="coinImageOutlet" destination="YQF-Ho-fCZ" id="jiW-ZP-W64"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKX-OB-ELb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="igH-7c-X10" userLabel="Exit" sceneMemberID="exit"/>
@@ -283,5 +330,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1242" height="2208"/>
+        <image name="blank" width="301" height="301"/>
     </resources>
 </document>

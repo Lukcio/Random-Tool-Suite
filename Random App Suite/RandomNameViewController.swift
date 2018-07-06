@@ -11,6 +11,7 @@ import UIKit
 class RandomNameViewController: UIViewController {
     
     
+    @IBOutlet weak var numberOfNamesSegmentedController: UISegmentedControl!
     @IBOutlet weak var nameOriginPicker: UIPickerView!
     
     //NAME ARRAYS
@@ -31,6 +32,7 @@ class RandomNameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberOfNamesSegmentedController.tintColor = UIColor.white
         print(englishNamesArray)
         // Do any additional setup after loading the view.
     }
@@ -43,6 +45,7 @@ class RandomNameViewController: UIViewController {
     @IBAction func unwindToInitialViewController(segue: UIStoryboardSegue) {
     }
     
+
 
     /*
     // MARK: - Navigation

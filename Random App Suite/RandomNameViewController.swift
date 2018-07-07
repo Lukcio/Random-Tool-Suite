@@ -49,21 +49,24 @@ class RandomNameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func chooseName() {
-        let boyNameArrayIndex = Int(arc4random_uniform(94))
-        nameTransferClass.selectedName = boyNamesArray[boyNameArrayIndex]
-        print(selectedNumberOfNames)
-        print(nameTransferClass.selectedName)
-    }
-    
-    @IBAction func unwindToInitialViewController(segue: UIStoryboardSegue) {
-    }
-    
+    //updates the selected number of names variable
     @IBAction func onNumberOfNamesTapped(_ sender: UISegmentedControl) {
         selectedNumberOfNames = Int(sender.titleForSegment(at: sender.selectedSegmentIndex)!)!
         print(selectedNumberOfNames)
     }
     
+    //chooses a random name from the name array
+    func chooseName() {
+        let boyNameArrayIndex = Int(arc4random_uniform(94))
+        for i in 1...selectedNumberOfNames {
+            
+        }
+        nameTransferClass.selectedName = boyNamesArray[boyNameArrayIndex]
+        print(selectedNumberOfNames)
+        print(nameTransferClass.selectedName)
+    }
+    
+    //Actions to execute when the generate button is tapped
     @IBAction func onGenerateTapped(_ sender: Any) {
         chooseName()
     }
@@ -78,6 +81,4 @@ class RandomNameViewController: UIViewController {
         // Pass the selected object to the new view controller.
         dvc.nameTransferClass = self.nameTransferClass
     }
-
-
 }

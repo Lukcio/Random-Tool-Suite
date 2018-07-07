@@ -25,9 +25,6 @@ class CoinViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindToInitialViewController(segue: UIStoryboardSegue) {
-    }
-    
     func flipCoin() {
         let randomNumber = Int(arc4random_uniform(2))
         let selectedSide = sides[randomNumber]

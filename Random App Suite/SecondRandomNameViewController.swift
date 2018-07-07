@@ -24,9 +24,6 @@ class SecondRandomNameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindToInitialViewController(segue: UIStoryboardSegue) {
-    }
-    
     func displayNames() {
         nameLabel1.text = nameTransferClass.selectedName
     }

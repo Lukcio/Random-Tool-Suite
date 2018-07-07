@@ -16,6 +16,8 @@
 		143FE66920EFD6730097A6E9 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66820EFD6730097A6E9 /* DiceViewController.swift */; };
 		143FE66B20EFD6C80097A6E9 /* RandomNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */; };
 		143FE66D20EFD6EF0097A6E9 /* RandomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */; };
+		14BD153420F038EA00F18F1C /* SecondRandomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BD153320F038EA00F18F1C /* SecondRandomNameViewController.swift */; };
+		14BD153620F039A000F18F1C /* NameTransferClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BD153520F039A000F18F1C /* NameTransferClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		143FE66820EFD6730097A6E9 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewController.swift; sourceTree = "<group>"; };
 		143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNameViewController.swift; sourceTree = "<group>"; };
+		14BD153320F038EA00F18F1C /* SecondRandomNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRandomNameViewController.swift; sourceTree = "<group>"; };
+		14BD153520F039A000F18F1C /* NameTransferClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTransferClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				143FE66620EFCA4C0097A6E9 /* CoinViewController.swift */,
 				143FE66820EFD6730097A6E9 /* DiceViewController.swift */,
 				143FE66C20EFD6EF0097A6E9 /* RandomNameViewController.swift */,
+				14BD153520F039A000F18F1C /* NameTransferClass.swift */,
+				14BD153320F038EA00F18F1C /* SecondRandomNameViewController.swift */,
 				143FE66A20EFD6C80097A6E9 /* RandomNumberViewController.swift */,
 				143FE65B20EFA5280097A6E9 /* Assets.xcassets */,
 				143FE65D20EFA5280097A6E9 /* LaunchScreen.storyboard */,
@@ -148,10 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				143FE66D20EFD6EF0097A6E9 /* RandomNameViewController.swift in Sources */,
+				14BD153420F038EA00F18F1C /* SecondRandomNameViewController.swift in Sources */,
 				143FE66B20EFD6C80097A6E9 /* RandomNumberViewController.swift in Sources */,
 				143FE66720EFCA4C0097A6E9 /* CoinViewController.swift in Sources */,
 				143FE65720EFA5270097A6E9 /* ViewController.swift in Sources */,
 				143FE65520EFA5270097A6E9 /* AppDelegate.swift in Sources */,
+				14BD153620F039A000F18F1C /* NameTransferClass.swift in Sources */,
 				143FE66920EFD6730097A6E9 /* DiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

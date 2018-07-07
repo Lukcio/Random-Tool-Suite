@@ -25,7 +25,7 @@ class SecondRandomNameViewController: UIViewController {
     }
     
     func displayNames() {
-        nameLabel1.text = nameTransferClass.selectedName
+        nameLabel1.text = nameTransferClass.namesArray[0]
     }
     /*
     // MARK: - Navigation

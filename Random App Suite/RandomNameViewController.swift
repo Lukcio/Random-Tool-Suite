@@ -27,7 +27,7 @@ class RandomNameViewController: UIViewController {
     "Carter","Bobby","Ezra","Ellis","Leon","Roman","Aaron","Liam","Jesse","Jasper","Felix","Jamie"]
     
     let numberOfNamesArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",]
-    var selectedNumberOfNames: Int = 0
+    var selectedNumberOfNames: Int = 1
     
     let nameTransferClass = NameTransferClass()
     
@@ -41,7 +41,8 @@ class RandomNameViewController: UIViewController {
         genderSegmentedController.tintColor = UIColor.white
         //print(englishNamesArray)
         // Do any additional setup after loading the view.
-        print(boyNamesArray.count)
+        //print(boyNamesArray.count)
+        print(selectedNumberOfNames)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,13 +58,16 @@ class RandomNameViewController: UIViewController {
     
     //chooses a random name from the name array
     func chooseName() {
-        let boyNameArrayIndex = Int(arc4random_uniform(94))
-        for i in 1...selectedNumberOfNames {
-            
+        if nameTransferClass.namesArray.count > 0 {
+            nameTransferClass.namesArray.removeAll()
         }
-        nameTransferClass.selectedName = boyNamesArray[boyNameArrayIndex]
-        print(selectedNumberOfNames)
-        print(nameTransferClass.selectedName)
+        for i in 1...selectedNumberOfNames {
+            print(i)
+            print(selectedNumberOfNames)
+            var boyNameArrayIndex = Int(arc4random_uniform(94))
+            nameTransferClass.namesArray.append(boyNamesArray[boyNameArrayIndex])
+        }
+        print(nameTransferClass.namesArray)
     }
     
     //Actions to execute when the generate button is tapped

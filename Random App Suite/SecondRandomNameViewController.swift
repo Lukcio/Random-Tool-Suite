@@ -48,6 +48,7 @@ class SecondRandomNameViewController: UIViewController {
         return labelArray
     }
     
+    //displays names on labels based on how many are in the array
     func displayNames() {
         var labelArray = populateLabelArray()
         let numberOfNamesInArray = nameTransferClass.namesArray.count
@@ -59,14 +60,4 @@ class SecondRandomNameViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

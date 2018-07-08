@@ -8,6 +8,8 @@
 
 import Foundation
 
+//DATA TRANSFER CLASS
+
 class NameTransferClass {
     var namesArray = [String]()
 }

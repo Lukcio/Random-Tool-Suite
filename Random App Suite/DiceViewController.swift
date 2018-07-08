@@ -24,12 +24,14 @@ class DiceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //chooses a random side and displays the associated image
     func rollDice() {
         let diceImageArrayIndex = Int(arc4random_uniform(6))
         let diceOutcome = diceImageArray[diceImageArrayIndex]
         diceButtonOutlet.setImage(UIImage(named: diceOutcome), for: UIControlState.normal)
         print(diceOutcome)
     }
+    //rolls the dice when the die is tapped
     @IBAction func onDiceButtonTapped(_ sender: Any) {
         rollDice()
     }

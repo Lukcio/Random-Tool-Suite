@@ -25,6 +25,7 @@ class CoinViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //chooses a random side and displays the associated image
     func flipCoin() {
         let randomNumber = Int(arc4random_uniform(2))
         let selectedSide = sides[randomNumber]
@@ -36,26 +37,7 @@ class CoinViewController: UIViewController {
         }
     }
     
-    func resetFlip() {
-        coinImageOutlet.setImage(UIImage(named: "blank.png"), for: UIControlState.normal)
-    }
-    
     @IBAction func coinButton(_ sender: Any) {
         flipCoin()
     }
-    @IBAction func onResetButtonTapped(_ sender: Any) {
-        resetFlip()
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

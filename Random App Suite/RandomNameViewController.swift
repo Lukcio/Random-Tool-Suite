@@ -37,9 +37,10 @@ class RandomNameViewController: UIViewController {
                           "Autumn","Quinn","Nevaeh","Piper","Ruby","Serenity","Willow","Everly","Cora","Kaylee","Lydia","Aubree",
                           "Arianna","Eliana","Peyton","Melanie",
                           "Gianna","Isabelle","Julia","Valentina"]
-    
+    //default number of names to be generated
     var selectedNumberOfNames: Int = 1
     
+    //default gender is NA
     var selectedGender = ""
     
     let nameTransferClass = NameTransferClass()
@@ -47,12 +48,13 @@ class RandomNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         numberOfNamesSegmentedController.tintColor = UIColor.white
-        //print(englishNamesArray)
-        // Do any additional setup after loading the view.
-        //print(boyNamesArray.count)
-        print(selectedNumberOfNames)
-        print(girlNamesArray.count)
-        print(boyNamesArray.count)
+        
+        //resets gender whenever view is reset
+        selectedGender = ""
+//        print(boyNamesArray.count)
+//        print(selectedNumberOfNames)
+//        print(girlNamesArray.count)
+//        print(boyNamesArray.count)
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,25 +65,26 @@ class RandomNameViewController: UIViewController {
     //updates the selected number of names variable
     @IBAction func onNumberOfNamesTapped(_ sender: UISegmentedControl) {
         selectedNumberOfNames = Int(sender.titleForSegment(at: sender.selectedSegmentIndex)!)!
-        print(selectedNumberOfNames)
+        //print(selectedNumberOfNames)
     }
-    
+    /*
+    when the male/female button is clicked, select gender and change alpha
+    to indicate selection
+    */
     @IBAction func onMaleClicked(_ sender: Any) {
         selectedGender = "Boy"
         maleButtonOutlet.alpha = 1.0
         femaleButtonOutlet.alpha = 0.5
-        //maleView.backgroundColor = UIColor(white: 1, alpha: 0.5)
-        print(selectedGender)
     }
+
     @IBAction func onFemaleClicked(_ sender: Any) {
         selectedGender = "Girl"
         femaleButtonOutlet.alpha = 1.0
         maleButtonOutlet.alpha = 0.5
-        //femaleView.backgroundColor = UIColor(white: 1, alpha: 0.5)
-        print(selectedGender)
     }
     
-    //chooses a random name from the name array
+    //chooses a random name from the name array and adds it to the
+    //name array n number of times(n being the selected # of names
     func chooseName() {
         if nameTransferClass.namesArray.count > 0 {
             nameTransferClass.namesArray.removeAll()
@@ -102,15 +105,10 @@ class RandomNameViewController: UIViewController {
     @IBAction func onGenerateTapped(_ sender: Any) {
         chooseName()
     }
-    
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
+    // sets DVC and transfers data-transfer class data to other instance
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
         let dvc = segue.destination as! SecondRandomNameViewController
-        // Pass the selected object to the new view controller.
         dvc.nameTransferClass = self.nameTransferClass
     }
 }
